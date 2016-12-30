@@ -1,6 +1,7 @@
 var React = require('react');
 
 var Queue = require('./queue.jsx');
+var Stats = require('./stats.jsx');
 
 var Home = React.createClass({
 
@@ -13,6 +14,7 @@ var Home = React.createClass({
            <Queue></Queue>
           </div>
           <div className="col s7">
+            <Stats></Stats>
           </div>
         </div>
       </div>
