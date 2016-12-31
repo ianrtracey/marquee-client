@@ -25,13 +25,6 @@ $(function (){
   }
 
   var ctx = document.getElementById('canvas-1');
-  var chart = new Chart(ctx, {
-    type: 'line',
-    data: lineChartData,
-    options: {
-      responsive: true
-    }
-  });
 
 
   var randomScalingFactor = function(){ return Math.round(Math.random()*100)};

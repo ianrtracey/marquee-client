@@ -2,6 +2,7 @@ var React = require('react');
 
 var Queue = require('./queue.jsx');
 var Billboard = require('./billboard.jsx')
+var CommitCard = require('./commit.jsx');
 
 var Home = React.createClass({
 
@@ -13,13 +14,16 @@ var Home = React.createClass({
           <div className="animated fadeIn">
             <div className="row">
               <div className="col-sm-6 col-lg-3">
-                 <Billboard number={'90000'} title={'commits'}></Billboard>
+                 <Queue></Queue>
               </div>
               <div className="col-sm-6 col-lg-3">
-                 <Billboard number={'90000'} title={'commits'}></Billboard>
+                 <Billboard number={'24'} title={'Projects'}></Billboard>
               </div>
               <div className="col-sm-6 col-lg-3">
-                 <Billboard number={'90000'} title={'commits'}></Billboard>
+                 <Billboard number={'19,000'} title={'Lines of Code'}></Billboard>
+              </div>
+              <div className="col-sm-6 col-lg-3">
+                 <Billboard number={'1223'} title={'Commits'}></Billboard>
               </div>
             </div>
           </div>

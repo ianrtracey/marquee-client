@@ -1,5 +1,5 @@
 var React = require('react');
-var Commit = require('./commit.jsx');
+var CommitCard = require('./commit.jsx');
 
 var Queue = React.createClass({
 
@@ -8,7 +8,7 @@ var Queue = React.createClass({
     return (
       <div className="queue">
         <h4>Recent Commiters</h4>
-        <Commit></Commit>
+        <CommitCard></CommitCard>
       </div>
     );
   }
