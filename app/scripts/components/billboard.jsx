@@ -2,6 +2,7 @@ var React = require('react');
 
 var Billboard = React.createClass({
 
+
   render: function() {
 
     const chartWrapperStyle = { height: '70px'};
