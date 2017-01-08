@@ -18,17 +18,17 @@ var StatsContainer = React.createClass({
       isLoading = true;
     }
     return (
-    <div>
+    <div className="row">
       <div className="col-sm-6 col-lg-3">
       <Billboard isLoading={isLoading} number={num_repos} title={'Projects'}></Billboard>
       </div>
       <div className="col-sm-6 col-lg-3">
-      <Billboard isLoading={isLoading} number={lines_code} title={'Lines of Code'}></Billboard>
-      </div>
-      <div className="col-sm-6 col-lg-3">
       <Billboard isLoading={isLoading} number={num_commits} title={'Commits'}></Billboard>
       </div>
-     </div>
+      <div className="col-sm-6 col-lg-5">
+      <Billboard isLoading={isLoading} number={lines_code} title={'Lines of Code'}></Billboard>
+      </div>
+    </div>
     );
   }
 });

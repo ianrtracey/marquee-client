@@ -13,10 +13,12 @@ var Home = React.createClass({
         <div className="container-fluid">
           <div className="animated fadeIn">
             <div className="row">
-              <div className="col-sm-6 col-lg-3">
+              <div className="col-sm-6 col-lg-5">
                  <Queue></Queue>
               </div>
-              <StatsContainer></StatsContainer>
+              <div className="col-sm-6 col-lg-7">
+                 <StatsContainer></StatsContainer>
+              </div>
             </div>
           </div>
         </div>

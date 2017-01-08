@@ -9,7 +9,6 @@ var Queue = React.createClass({
   mixins: [Reflux.connect(CommiterStore, 'commiters')],
 
   render: function() {
-    console.dir(this.state);
     return (
       <div className="queue">
         <h4>Recent Commiters</h4>

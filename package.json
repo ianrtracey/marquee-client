@@ -14,7 +14,8 @@
     "reflux": "~0.2.7",
     "reflux-core": "^0.3.0",
     "reflux-promise": "^1.0.4",
-    "superagent": "^3.3.1"
+    "superagent": "^3.3.1",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "browserify": "~9.0.7",
