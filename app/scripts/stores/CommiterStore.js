@@ -34,7 +34,14 @@ var CommiterStore = Reflux.createStore({
     if (new_commiters.length > 0) {
       console.log(new_commiters);
       var current_commiters = this.commiters;
+      // reset the 'newness' of current new items
+      _.each(current_commiters, function(commiter) {
+        if ('is_new' in commiter) {
+          delete commiter.is_new;
+        }
+      });
       _.each(new_commiters, function(commiter) {
+       commiter.is_new = true;
        current_commiters.unshift(commiter);
        if (current_commiters.length > 5) {
           current_commiters.pop();

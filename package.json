@@ -5,6 +5,7 @@
   "author": "Ian Tracey",
   "license": "MIT",
   "dependencies": {
+    "animate.css": "^3.5.2",
     "chart.js": "^2.4.0",
     "gulp-sass": "^3.0.0",
     "jquery": "~2.1.3",

@@ -13,7 +13,11 @@ var Queue = React.createClass({
       <div className="queue">
         <h4>Recent Commiters</h4>
         { this.state.commiters.map(function(commiter) {
-          return <CommitCard repoName={commiter.repo.name} repoOwner={commiter.repo.owner}></CommitCard>
+          var is_new = false;
+          if ('is_new' in commiter) {
+           is_new = true;
+          }
+          return <CommitCard repoName={commiter.repo.name} repoOwner={commiter.repo.owner} isNew={is_new} ></CommitCard>
         })
         }
       </div>
